@@ -1,0 +1,22 @@
+{
+  "name": "practice-javascript",
+  "version": "1.0.0",
+  "description": "This is a practice projecto to JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "study": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cesrra/practice-javascript.git"
+  },
+  "author": "Cesar Rincon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cesrra/practice-javascript/issues"
+  },
+  "homepage": "https://github.com/Cesrra/practice-javascript#readme",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
