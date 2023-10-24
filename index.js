@@ -1,8 +1,10 @@
-/* const partlist = require('./codewars/part-list')
+/* partlist 
+const partlist = require('./codewars/part-list')
 const list_input = ["I", "wish", "I", "hadn't", "come"]// ["az", "toto", "picaro", "zone", "kiwi"]
 console.log(partlist(list_input)) */
 
-/* const isSatorSquare = require('./codewars/is-sator-square')
+/* isSatorSquare
+const isSatorSquare = require('./codewars/is-sator-square')
 const list_input = [
     ['B', 'A', 'T', 'S'],
     ['A', 'B', 'U', 'T'],
@@ -12,7 +14,7 @@ const list_input = [
 isSatorSquare(list_input) 
 */
 
-/*
+/* 2D cellularNeighbourhood
 const cellularNeighbourhood = require('./codewars/2D-cellular-neighbourhood')
 const list_input = [
   // 0    1    2    3    4    5    6    7    8    9    10  
@@ -23,11 +25,5 @@ const list_input = [
     [27,  27,  29,  54,  53,  41,  12,  14,  32,  26,  44] // 4
 ]
 
-console.log(
-    cellularNeighbourhood(
-        "moore", 
-        list_input, 
-        [0, 7]
-    )
-)
+console.log( cellularNeighbourhood("moore", list_input, [0, 7]) )
 */
