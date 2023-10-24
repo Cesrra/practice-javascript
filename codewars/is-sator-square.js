@@ -1,4 +1,4 @@
-/*
+/*---------RESOLVER--------
 Información
 1. Muestra un mensaje en cuatro direcciones
 2. up-down (Abajo)
@@ -20,7 +20,7 @@ Preguntas
 Casos de Uso
 No aplica dado qe no debemos hacer validaciones
 
-Diseñar
+Diseño
 1.  recorra la tabla por filas en orden de 0 a lenght
 2.      tome la fila de la tabla
 2.      invierta la dirección de la fila
