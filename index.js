@@ -27,3 +27,14 @@ const list_input = [
 
 console.log( cellularNeighbourhood("moore", list_input, [0, 7]) )
 */
+
+const higherOrderFunctionsSeriesPrepareCountLanguages = require('./codewars/higherOrderFunctionsSeriesPrepareCountLanguages')
+const list_input = [
+  { firstName: 'Noah', lastName: 'M.', country: 'Switzerland', continent: 'Europe', age: 19, language: 'C' },
+  { firstName: 'Cesar', lastName: 'R.', country: 'Colombia', continent: 'Americas', age: 28, language: 'JavaScript' },
+  { firstName: 'Anna', lastName: 'R.', country: 'Liechtenstein', continent: 'Europe', age: 52, language: 'JavaScript' },
+  { firstName: 'Ramon', lastName: 'R.', country: 'Paraguay', continent: 'Americas', age: 29, language: 'Ruby' },
+  { firstName: 'Andres', lastName: 'M.', country: 'Colombia', continent: 'Americas', age: 19, language: 'JavaScript' },
+  { firstName: 'George', lastName: 'B.', country: 'England', continent: 'Europe', age: 81, language: 'C' },
+];
+console.log( higherOrderFunctionsSeriesPrepareCountLanguages(list_input) )
