@@ -69,3 +69,9 @@ const winnerList1 = [
 
 console.log(countWins(winnerList1, 'Portugal'))
 */
+
+/* Auth Username
+const authenticateUsernames = require('./codewars/7kyu/authenticateListUsernames')
+console.log(authenticateUsernames(['abcdef']))
+*/
+
