@@ -75,3 +75,8 @@ const authenticateUsernames = require('./codewars/7kyu/authenticateListUsernames
 console.log(authenticateUsernames(['abcdef']))
 */
 
+/* Sort Array
+const setSort = require('./codewars/7kyu/array-sort')
+console.log(setSort( [9, 7, 4, 2, 5, 3, 1, 8, 6], 2 ))
+*/
+
