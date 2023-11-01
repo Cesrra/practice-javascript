@@ -80,3 +80,10 @@ const setSort = require('./codewars/7kyu/array-sort')
 console.log(setSort( [9, 7, 4, 2, 5, 3, 1, 8, 6], 2 ))
 */
 
+/* Sort By Bits
+const sortByBit = require('./codewars/6kyu/sorting-by-bits')
+// console.log(sortByBit( [5, 6, 9, 8, 3, 3, 7, 1] ))
+console.log(sortByBit( [3, 8, 2, 6, 5, 7, 9, 1] ))
+*/
+
+const mergeTwoSortedLists = require('./advanced_algorithms/merge-two-sorted-lists')
