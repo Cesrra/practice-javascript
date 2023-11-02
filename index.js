@@ -97,3 +97,6 @@ const input = [1,8,6,2,5,4,8,3,7]
 console.log(containerMostWater(input))
 */
 
+const longestSubstring = require('./advanced_algorithms/slidingWindow/longest-substring-without-repeating-characteres')
+const str_input = "jdkafnlcdsalkxcmpoiuytfacv"//"abcabcbb"
+console.log(longestSubstring( str_input ))

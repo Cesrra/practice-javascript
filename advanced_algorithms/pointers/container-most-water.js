@@ -83,4 +83,4 @@ const containerMostWater2 = (arr=[]) => {
     return max_area
 }
 
-module.exports = containerMostWater
+module.exports = containerMostWater2
