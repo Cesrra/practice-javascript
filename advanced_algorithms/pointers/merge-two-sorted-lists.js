@@ -61,6 +61,4 @@ const mergeTwoSortedLists = (nums1, nums2, m, n) => {
     return nums1
 }
 
-console.log(mergeTwoSortedLists([1,2,3,0,0,0,0],[-4,2,3,9], 3, 4))
-
 module.exports = mergeTwoSortedLists

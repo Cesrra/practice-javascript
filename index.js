@@ -86,4 +86,14 @@ const sortByBit = require('./codewars/6kyu/sorting-by-bits')
 console.log(sortByBit( [3, 8, 2, 6, 5, 7, 9, 1] ))
 */
 
-const mergeTwoSortedLists = require('./advanced_algorithms/merge-two-sorted-lists')
+/* Merge Two Sorted Lists
+const mergeTwoSortedLists = require('./advanced_algorithms/pointers/merge-two-sorted-lists')
+console.log(mergeTwoSortedLists( [1,2,3,0,0,0,0],[-4,2,3,9], 3, 4 ))
+*/
+
+/* Container Most Water
+const containerMostWater = require('./advanced_algorithms/pointers/container-most-water')
+const input = [1,8,6,2,5,4,8,3,7]
+console.log(containerMostWater(input))
+*/
+
