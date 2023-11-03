@@ -97,6 +97,13 @@ const input = [1,8,6,2,5,4,8,3,7]
 console.log(containerMostWater(input))
 */
 
+/* Longest SubString
 const longestSubstring = require('./advanced_algorithms/slidingWindow/longest-substring-without-repeating-characteres')
 const str_input = "jdkafnlcdsalkxcmpoiuytfacv"//"abcabcbb"
 console.log(longestSubstring( str_input ))
+*/
+
+const searchRotatedArrays = require('./advanced_algorithms/binary-search/search-rotated-arrays')
+const list_input = [12,13,9,10,11]
+const target = 12
+console.log(searchRotatedArrays( list_input, target ))
