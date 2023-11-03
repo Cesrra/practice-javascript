@@ -86,6 +86,9 @@ const sortByBit = require('./codewars/6kyu/sorting-by-bits')
 console.log(sortByBit( [3, 8, 2, 6, 5, 7, 9, 1] ))
 */
 
+
+/*---------------------------- ADVANCED ALGORITHMS ----------------------------*/
+
 /* Merge Two Sorted Lists
 const mergeTwoSortedLists = require('./advanced_algorithms/pointers/merge-two-sorted-lists')
 console.log(mergeTwoSortedLists( [1,2,3,0,0,0,0],[-4,2,3,9], 3, 4 ))
@@ -103,7 +106,20 @@ const str_input = "jdkafnlcdsalkxcmpoiuytfacv"//"abcabcbb"
 console.log(longestSubstring( str_input ))
 */
 
+/* Search Rotated Arrays
 const searchRotatedArrays = require('./advanced_algorithms/binary-search/search-rotated-arrays')
 const list_input = [12,13,9,10,11]
 const target = 12
 console.log(searchRotatedArrays( list_input, target ))
+*/
+
+/*Search 2D Array
+const search2dArray = require('./advanced_algorithms/binary-search/search-2d-array')
+const list_input = [
+  [1 ,3 ,5 ,7 ],
+  [10,11,16,20],
+  [23,30,34,700]
+]
+const target = 600
+console.log(search2dArray( list_input, target ))
+*/
