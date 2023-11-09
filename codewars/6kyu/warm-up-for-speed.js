@@ -158,9 +158,9 @@ const functionF = (arr) => {
 const sortedCommByDigs = (arr1=[], arr2=[]) => {
     const res = []
     const [big_arr, small_arr] = getBigSmallArrays(arr1, arr2)
-    const elements = getDuplicatedElements(big_arr, small_arr)
-    const { elements_and_f, f_of_elements } = functionF(elements)
-    const elements_and_f_copy = {...elements_and_f}
+    const elements_t = getDuplicatedElements(big_arr, small_arr)
+    const { elements_and_f, f_of_elements } = functionF(elements_t)
+    const elements = [...elements_t].sort((a,b) => a-b)
     for (let i = 0; i < f_of_elements.length; i++) {
         for ( let j = 0; j < elements.length; j++) {
             if ( elements_and_f[`${f_of_elements[i]}${elements[j]}`] ) {
