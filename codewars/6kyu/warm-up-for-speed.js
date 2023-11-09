@@ -99,48 +99,30 @@ const getDuplicatedElements = (big_arr, small_arr) => {
     const res = []
 
     for (let i = 0; i < big_arr.length; i++) {
-        // console.log('-------------------------------------',i, p2, temp)
-        // console.log('Antes del tamp ', temp, big_arr[i],small_arr[p2], i, p2)
         if (big_arr[i] != temp) {
             if (big_arr[i] == small_arr[p2]) {
                 res.push(big_arr[i])
-                // console.log('Insertar 1', big_arr[i])
             } else if (big_arr[i] < small_arr[p2]) {
                 mit = p2
                 while (big_arr[i] < small_arr[mit]) {
-                    mit++ //1
+                    mit++
                 }
                 if (big_arr[i] == small_arr[mit]) {
                     res.push(big_arr[i])
-                    // console.log('Insertar 2', big_arr[i])
-                    // if (small_arr[mit] > big_arr[i+1]) {
-                    //     p2 = mit + 1
-                    // }
                     p2 = mit
                 }
             } else {
                 mit = i
                 while (small_arr[p2] < big_arr[mit]) {
-                    mit++ //1
+                    mit++
                 }
                 if (small_arr[p2] == big_arr[mit]) {
                     res.push(big_arr[mit])
-                    // console.log('Insertar 3', big_arr[mit])
-                    // console.log(small_arr[p2], p2, mit)
-                    // temp = big_arr[mit]
-                    // i = mit
-                    // if (big_arr[mit] > small_arr[p2+1]) {
-                    //     // i = mit +1
-                    // } 
                 }
                 i = mit
             }
         }
-        // else {
-        //     console.log('Debí hacer algo', i,p2,)
-        // }
         temp = big_arr[i]
-        // console.log('---FIN--- temp ahora es = ',temp, ' y p2 = ',p2)
     }
 
     return res
@@ -163,21 +145,13 @@ const functionF = (arr) => {
     for(let i = 0; i < arr.length; i++) {
         const element_string = arr[i].toString()
         const dr = sum_operations( element_string, (a) => a )
-        // console.log('dr ', dr)
         const dsddr = sum_operations( dr.toString(), (a) => a*a )
-        // console.log('dsddr ', dsddr)
         const f_of_arrI = dr + dsddr
 
-        // console.log('------------------------------')
-        // console.log(dr, dsddr, arr[i].toString())
         elements_and_f[`${f_of_arrI}${arr[i]}`] = arr[i]
-        // f_and_elements[`${arr[i]}`] = f_of_arrI
         f_of_elements.push(f_of_arrI)
-        // console.log(arr[i])
     }
-    // console.log('antes ', elements_and_f)
     sortDescendant(f_of_elements)
-    // console.log('despues ', f_and_elements)
     return {elements_and_f, f_of_elements }
 }
 
@@ -187,14 +161,9 @@ const sortedCommByDigs = (arr1=[], arr2=[]) => {
     const elements = getDuplicatedElements(big_arr, small_arr)
     const { elements_and_f, f_of_elements } = functionF(elements)
     const elements_and_f_copy = {...elements_and_f}
-    console.log('primer recorrido ', f_of_elements)
-    console.log('segundo recorrido ', elements)
-    console.log('obj para acceder ', elements_and_f)
     for (let i = 0; i < f_of_elements.length; i++) {
         for ( let j = 0; j < elements.length; j++) {
-            // console.log('ANtes ',elements_and_f[`${f_of_elements[i]}${elements[j]}`])
             if ( elements_and_f[`${f_of_elements[i]}${elements[j]}`] ) {
-                // console.log('entro ', elements_and_f[`${f_of_elements[i]}${elements[j]}`])
                 res.push(elements_and_f[`${f_of_elements[i]}${elements[j]}`])
                 delete elements_and_f[`${f_of_elements[i]}${elements[j]}`]
                 break
