@@ -86,10 +86,12 @@ const sortByBit = require('./codewars/6kyu/sorting-by-bits')
 console.log(sortByBit( [3, 8, 2, 6, 5, 7, 9, 1] ))
 */
 
+/* Sorted Comm By Digs
 const sortedCommByDigs = require('./codewars/6kyu/warm-up-for-speed')
 const list_input_1 = [1,1,1,1,1,1,1,1] // [5, 56, 28, 35, 12, 27, 64, 99, 18, 31, 14, 6]
 const list_input_2 = [2,2,2,2,2,2,2,1] // [28, 17, 31, 63, 64, 5, 18, 17, 95, 56, 37, 5, 28, 16]
 console.log(sortedCommByDigs( list_input_1, list_input_2 ))
+*/
 
 /*---------------------------- ADVANCED ALGORITHMS ----------------------------*/
 
