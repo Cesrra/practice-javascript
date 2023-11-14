@@ -78,6 +78,27 @@ temp -> guarda la pocisión de la hiteración anterior
 12. guardamos primero el FDeElements[i] más grande
 13. retornamos el array res
 */
+
+//////// MEJOR SOLUCIÓN //////////
+
+const dr = n => n ? n % 10 + dr(n / 10 | 0) : 0;
+
+const dsd = n => n ? Math.pow(n % 10, 2) + dsd(n / 10 | 0) : 0;
+
+const sortedCommByDigs = (arr1, arr2) => {
+
+  let set1 = new Set(arr1)
+  ,   set2 = new Set(arr2)
+  , common = [...set1].filter(n => set2.has(n));
+
+  return common
+    .map(n => [ n, dr(n) + dsd(dr(n)) ])
+    .sort((a, b) => b[1] - a[1] || a[0] - b[0])
+    .map(p => p[0]);
+
+};
+
+//////// MI SOLUCIÓN /////////////
 const sortDescendant = (arr) => arr.sort((a,b) => b-a)
 
 const getBigSmallArrays = (arr1, arr2) => {
@@ -155,7 +176,7 @@ const functionF = (arr) => {
     return {elements_and_f, f_of_elements }
 }
 
-const sortedCommByDigs = (arr1=[], arr2=[]) => {
+const sortedCommByDigs2 = (arr1=[], arr2=[]) => {
     const res = []
     const [big_arr, small_arr] = getBigSmallArrays(arr1, arr2)
     const elements_t = getDuplicatedElements(big_arr, small_arr)
